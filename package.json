@@ -12,6 +12,8 @@
     "@uniswap/v3-periphery": "^1.4.4",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
-    "solc": "^0.7.6"
+    "solc": "^0.7.6",
+    "web3": "^4.6.0",
+    "web3-eth-accounts": "^4.1.1"
   }
 }
