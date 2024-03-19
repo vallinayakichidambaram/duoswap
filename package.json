@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "clone uniswap",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "@uniswap/v3-periphery": "^1.4.4",
+    "dotenv": "^16.4.5",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
     "solc": "^0.7.6",
-    "web3": "^4.6.0",
+    "web3": "4.4.0",
     "web3-eth-accounts": "^4.1.1"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.1"
   }
 }

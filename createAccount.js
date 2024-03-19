@@ -7,15 +7,18 @@
 //rpc - https://avalanche-fuji-c-chain-rpc.publicnode.com	
 //wss - wss://avalanche-fuji-c-chain-rpc.publicnode.com	
 // Faucet - https://core.app/tools/testnet-faucet/?subnet=c&token=c
+// https://core.app/tools/testnet-faucet/?subnet=wagmi&token=wagmi
+const { configDotenv } = require('dotenv');
 const { Web3 } = require('web3')
-const Accounts = require('web3-eth-accounts');
+configDotenv()
 async function createAdminAccount () {
-    const web3 = new Web3('https://subnets.avax.network/wagmi/wagmi-chain-testnet/rpc');
+    const web3 = new Web3(process.env.MUMBAI_RPC_URL);
     const adminAccount = web3.eth.accounts.create();
     console.log(`Admin Account=====> ${adminAccount.address}`);
     console.log(`Admin Private Key=====> ${adminAccount.privateKey}`);
 
 }
+
 
 
 createAdminAccount()
