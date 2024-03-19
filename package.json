@@ -19,6 +19,7 @@
     "web3-eth-accounts": "^4.1.1"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.0",
     "hardhat": "^2.22.1"
   }
 }
